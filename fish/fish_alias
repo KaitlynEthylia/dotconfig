@@ -1,0 +1,11 @@
+alias ls="exa -la"
+alias lf="lfrun"
+
+alias sudo="doas"
+alias pm="doas pacman -S"
+alias pr="doas pacman -Rs"
+alias pmyu="doas pacman -Syu"
+alias ys="yay -S"
+alias v="nvim"
+
+alias sd="doas shutdown now"

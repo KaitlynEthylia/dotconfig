@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/kaitlyn/.config/coc/extensions/coc-java-data/jdt_ws_bf721823eb39031b795e73d3ff8569a1/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+677423665.index
+3842426239.index

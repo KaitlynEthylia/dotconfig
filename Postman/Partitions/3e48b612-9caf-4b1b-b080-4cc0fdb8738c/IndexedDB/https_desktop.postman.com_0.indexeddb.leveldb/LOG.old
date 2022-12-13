@@ -1,0 +1,20 @@
+2022/12/12-10:56:11.491 4091 Creating DB /home/kaitlyn/.config/Postman/Partitions/3e48b612-9caf-4b1b-b080-4cc0fdb8738c/IndexedDB/https_desktop.postman.com_0.indexeddb.leveldb since it was missing.
+2022/12/12-10:56:11.497 4091 Reusing MANIFEST /home/kaitlyn/.config/Postman/Partitions/3e48b612-9caf-4b1b-b080-4cc0fdb8738c/IndexedDB/https_desktop.postman.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/12/12-10:56:11.524 406c Level-0 table #5: started
+2022/12/12-10:56:11.526 406c Level-0 table #5: 2304 bytes OK
+2022/12/12-10:56:11.528 406c Delete type=0 #3
+2022/12/12-10:56:11.528 406c Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/12/12-10:56:12.271 4069 Level-0 table #7: started
+2022/12/12-10:56:12.272 4069 Level-0 table #7: 1871 bytes OK
+2022/12/12-10:56:12.274 4069 Delete type=0 #4
+2022/12/12-10:56:12.274 4069 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/12/12-10:56:12.278 4069 Level-0 table #9: started
+2022/12/12-10:56:12.280 4069 Level-0 table #9: 507 bytes OK
+2022/12/12-10:56:12.281 4069 Delete type=0 #6
+2022/12/12-10:56:12.282 4069 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at '\x00\x05\x00\x00\x05' @ 283 : 1
+2022/12/12-10:56:12.282 4069 Compacting 1@0 + 1@1 files
+2022/12/12-10:56:12.283 4069 Generated table #10@0: 106 keys, 1537 bytes
+2022/12/12-10:56:12.283 4069 Compacted 1@0 + 1@1 files => 1537 bytes
+2022/12/12-10:56:12.285 4069 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/12/12-10:56:12.285 4069 Delete type=2 #9
+2022/12/12-10:56:12.285 4069 Manual compaction at level-0 from '\x00\x05\x00\x00\x05' @ 283 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)

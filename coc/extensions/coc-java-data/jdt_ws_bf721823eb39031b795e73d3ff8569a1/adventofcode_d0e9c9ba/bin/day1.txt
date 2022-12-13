@@ -1,0 +1,78 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+		
+		ArrayList<ArrayList<Integer>> elves = new ArrayList<>();
+		ArrayList<Integer> buffer = new ArrayList<>();
+		
+		try {
+			Scanner sc = new Scanner(new File("input"));
+			ArrayList<String> lines = new ArrayList<String>();
+			while (sc.hasNextLine()) {
+				lines.add(sc.nextLine());
+			}
+
+
+			for( String line : lines ) {
+				try {
+					if( line == "" ) {
+						elves.add(buffer);
+						buffer = new ArrayList<>();
+					} else {
+						int num = Integer.parseInt(line);
+						buffer.add(num);
+					}
+				} catch ( NumberFormatException e ) {
+					e.printStackTrace();
+				}
+			}
+		} catch( IOException e ) {
+			e.printStackTrace();	
+		}
+		
+		int maxSum = 0;
+		int index = 0;
+
+		int maxSum2 = 0;
+		int index2 = 0;
+
+		int maxSum3 = 0;
+		int index3 = 0;
+
+		for( ArrayList<Integer> elf : elves ) {
+			int sum = 0;
+			for( Integer food : elf ) {
+				sum += food;
+			}
+
+			if( sum < maxSum ) {
+				if( sum < maxSum2 ) {
+					if( sum > maxSum3 ) {
+						maxSum3 = sum;
+						index3 = elves.indexOf(elf);
+					}
+				} else {
+					maxSum2 = sum;
+					index2 = elves.indexOf(elf);
+				}
+			} else {
+				maxSum = sum;
+				index = elves.indexOf(elf);
+			}
+		}
+
+		System.out.println(elves.get(41));
+		System.out.println(elves.get(248));
+		System.out.println(elves.get(232));
+
+
+		System.out.println(String.format("The elf with the most food is elf %d, with %d pieces.", index, maxSum));
+		System.out.println(String.format("The elf with the second most food is elf %d, with %d pieces.", index2, maxSum2));
+		System.out.println(String.format("The elf with the third most food is elf %d, with %d pieces.", index3, maxSum3));
+		System.out.println(String.format("The sum of these elves' food is %d", maxSum + maxSum2 + maxSum3));
+	}
+}

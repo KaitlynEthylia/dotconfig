@@ -1,0 +1,6 @@
+2022/12/12-10:56:11.920 406c Creating DB /home/kaitlyn/.config/Postman/Partitions/3e48b612-9caf-4b1b-b080-4cc0fdb8738c/IndexedDB/file__0.indexeddb.leveldb since it was missing.
+2022/12/12-10:56:11.931 406c Reusing MANIFEST /home/kaitlyn/.config/Postman/Partitions/3e48b612-9caf-4b1b-b080-4cc0fdb8738c/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2022/12/12-10:56:11.937 4069 Level-0 table #5: started
+2022/12/12-10:56:11.939 4069 Level-0 table #5: 492 bytes OK
+2022/12/12-10:56:11.941 4069 Delete type=0 #3
+2022/12/12-10:56:11.941 4069 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
